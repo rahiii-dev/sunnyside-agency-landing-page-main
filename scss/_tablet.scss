@@ -1,0 +1,58 @@
+@media screen and (min-width: 650px) {
+    .service{
+
+        &_content{
+            height: inherit;
+            text-align: left;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                width: 65%;
+            }
+            p{
+                width: 65%;
+            }
+            a{
+                display: block;
+                width: 65%;
+            }
+        }
+        &_pattern{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .pattern_1{
+
+            &_image{
+                height: 100%;
+            }
+
+            .sevice_image{
+                order: 2;
+            }
+            .service_content{
+                order: 1;
+            }
+        }
+        .pattern_2{
+
+            &_image{
+                height: 100%;
+            }
+        }
+    }
+
+    .testimonial{
+
+        &_cards {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+          }
+    }
+}

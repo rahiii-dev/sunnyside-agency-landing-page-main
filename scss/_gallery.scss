@@ -1,0 +1,9 @@
+.image_gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+
+    &_image{
+        margin-top: -3.5px;
+    }
+}

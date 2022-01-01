@@ -1,0 +1,99 @@
+.header{
+    min-height: 33.7rem; //540px
+    background: url('../images/mobile/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 100%;
+    padding-top: 1.875rem;//30px
+    position: relative;
+
+    ._main{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        .hamburger_btn{
+            background-color: transparent;
+        }
+    }
+    ._title{
+        font-size: 1.875rem;//30px
+        font-family: $family-02;
+        font-weight: 900;
+        letter-spacing: 9px;
+        text-transform: uppercase;
+        text-align: center;
+        color: $white;
+        margin-top: 5.9375rem;//95px
+        margin-bottom: 3.4375rem;//55px
+    }
+    ._arrow{
+        text-align: center;
+        img{
+            width: auto;
+            height: 7.1875rem; //115px;
+            animation: arrow 2s ease infinite;
+        }
+    }
+    nav{
+        display: none;
+    }
+    
+    .nav_mobile{
+        position: absolute;
+        background-color: $white;
+        text-align: center;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        top: 6.6875rem;//107px;
+        left: 1.25rem;
+        right: 1.25rem;
+        padding-block: 2.1875rem;//35px;
+        gap: 10px;
+        transform: scale(0);
+        transition: transform 400ms ease;
+        transform-origin: top right;
+        a{
+            width: 8.755rem;//140px;
+            height: 3.4375rem;//55px;
+            padding: 18px 28px;
+            border-radius: 50px;
+            color: $grayish-blue;
+
+            &:active{
+                font-size: 0.875rem;
+                background-color: $yellow;
+                color: $blue-dark;
+                text-transform: uppercase;
+                font-family: $family-02;
+            }
+        }
+
+        &::before{
+            content: ' ';
+            position: absolute;
+            background-color: inherit;
+            width: 25px;
+            height: 26px;
+            top: -25px;
+            right: 0;
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        }
+    }
+    .nav_mobile_open{
+        transform: scale(1);
+    }
+}
+@keyframes arrow {
+      0%, 20%, 50%, 80%, 100% {
+         transform: (translateY(0));
+      }
+      40% {
+        transform: (translateY(-30px));
+      }
+      60% {
+        transform: (translateY(-15px));
+      }
+
+}

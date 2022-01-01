@@ -1,0 +1,11 @@
+.service{
+    &_content{
+        font-size: 0.875rem;
+        background-color: red;
+
+        h1{
+            font-family: $family-02;
+            font-size: 3em;//1.625rem;
+        }
+    }
+}

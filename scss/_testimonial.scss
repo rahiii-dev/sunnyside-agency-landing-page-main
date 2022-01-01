@@ -1,0 +1,43 @@
+.testimonial {
+  padding: 65px 25px;
+
+  &_heading {
+    font-family: $family-02;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $grayish-blue;
+  }
+
+  &_cards {
+    text-align: center;
+  }
+}
+
+.card {
+  max-width: 340px;
+  margin: 0 auto;
+  margin-top: 65px;
+
+  &_profile {
+    width: 74px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+  }
+  p {
+    font-size: 1rem;
+    color: $grayish-blue-dark;
+    margin-bottom: 40px;
+    padding: 0.3em;
+  }
+  h1 {
+    font-size: 1rem;
+    font-family: $family-02;
+    color: $blue-destruated;
+    margin-bottom: 1em;
+  }
+  h5 {
+    font-size: 0.875rem;
+    color: $grayish-blue;
+  }
+}
